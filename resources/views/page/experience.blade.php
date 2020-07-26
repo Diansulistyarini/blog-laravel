@@ -7,10 +7,6 @@
 
     <!-- Bootstrap core CSS -->
   <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('/js/app.js') }}" defer></script>
-
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
@@ -32,28 +28,21 @@
     </style>
     <title>Experience</title>
 </head>
+
 <body>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <center>
-            <img src="img/dian.jpg" width="90px" height="90px" class="rounded-circle">
-          </center>
-          <h3 style="color: black; text-align:center">Dian Sulistyarini</h3>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" style="margin-left:530px;color:white" href="/home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" style="color:white" href="/profile">Profile</a>
+      <a class="nav-item nav-link" style="color:white" href="/experience">Experience</a>
+      <a class="nav-item nav-link" style="color:white" href="/portfolio">Portofolio</a>
     </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: -32px;">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" style="margin-left:530px" href="/home">Home</a>
-          <a class="nav-item nav-link" href="/profile">Profile</a>
-          <a class="nav-item nav-link active" href="/experience">Experience<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link " href="/portfolio">Portofolio</a>
-        </div>
-    </nav>
+  </div>
+  </nav>
     
       {{-- experience --}}
-      <section class="page-section bg-primary text-white mb-0" id="about">
+      <section class="page-section bg-info text-white mb-0" id="about">
         <div class="container">
             <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-white">Experience</h2>
@@ -63,22 +52,64 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
+
             <!-- About Section Content-->
+
             <div class="row">
-                <div class="col-lg-4 ml-auto"><p class="lead"><b>Senior Web Developer</b><br>
-                Intelitec Solutions Bring to the Table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.<br><hr><br>
-                <b>March 2013 - Present</b><br>
-                Web Developer Intelitec Solutions Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+                <div class="col-lg-3 ml-auto"><p class="lead"><b>Seminar DSC</b><br>
+                  <img src="img/dsc.jpg" width="200px">
+                  <p>Development Student Clubs(DSC) disini saya <br>
+                     mendapat ilmu baru dan banyak pengetahuan <br>
+                     baru tentang dunia IT juga programmer.</p>
             </div>
-            <div class="col-lg-4 ml-auto"><p class="lead">
-            <b>December 2011 - March 2013</b><br>
-                Junior Web Designer Shout! Media Productions Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.<br><hr><br>
-                <b>July 2010 - December 2011</b> <br>
-                Web Design Intern Shout! Media Productions Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. <br>
-                September 2008 - June 2010</p>
-            </p></div>
-        </div>
+
+            <div class="col-lg-3 ml-auto"><p class="lead"><b>Kunjungan Industri</b><br>
+              <img src="img/cinovasi.jpg" width="200px">
+              <p>Di kelas 10 ada kegiatan kunjungan industri<br>
+                 ke PT. Cinovasi Rekprima, dari kegiatan tersebut<br>
+                 pikiran saya tentang dunia pekerjaan di dunia IT jadi meluas<br>
+              </p>
+            </div>
+
+            <div class="col-lg-3 ml-auto"><p class="lead"><b>Dicoding</b><br>
+              <img src="img/sertifikat.jpg" width="200px">
+              <p>Dicoding mengadakan ID Camp dan saya mengikuti 
+                kelas web dasar dan submissionnya saya membuat 
+                web profile menggunakan HTML dan CSS<br>
+              </p>
+            </div>
+
+            <div class="col-lg-3 ml-auto"><p class="lead"><b>Starbhak Day</b><br>
+              <img src="img/sbd.jpg" width="132px">
+              <p>Starbhak Day adalah kegiatan ajang pameran karya siswa, di SMK Taruna Bhakti  <br>
+                 rutin menggelar acara seperti itu untuk mengexplore para murid <br>
+                 agar lebih memahami kondisi saat turun kelapangan seperti apa<br>
+              </p>
+            </div>
     </section>
+
+     <!-- Footer-->
+  <footer class="footer text-center bg-secondary" style="height: 80px;">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-3 mb-lg-0" style="margin-top: -60px;">
+              <h4 class="text-uppercase mb-4" style="margin-right: 10px">Lets Visit</h4>
+              <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="https://github.com/Diansulistyarini"><i class="fab fa-github"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="https://www.youtube.com/channel/UCJvcsKmPA-omCqB6OVzsw7w?view_as=subscriber"><i class="fab fa-fw fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="https://www.instagram.com/dianslstyrn/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white" style="height: 10px">
+    <div class="container" style="text-align: center"><small>dian's_blog@2020</small></div>
+</div>
     
 </body>
 </html>
